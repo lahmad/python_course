@@ -27,7 +27,7 @@ def calculate_sum(filename):
         raise FileNotFoundError("File {} cannot be found".format(filename))
     finally:
         if not file_handler:
-            close(file_handler)
+            file_handler.close()
 
     return total_sum
 
