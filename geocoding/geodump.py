@@ -5,7 +5,7 @@ import codecs
 # Open the file handler to write the data INTO
 # It will truncate all the existing data
 file_handler = codecs.open('where.js', 'w', 'utf-8')
-file_handler.write('myData=[\n]')
+file_handler.write('myData=[\n')
 count = 0
 
 # Open the database connection

@@ -47,7 +47,7 @@ for address in file_handler:
         url = 'http://py4e-data.dr-chuck.net/json?' + urllib.parse.urlencode(params)
         print(url)
     else:
-        params['key'] = 'AIzaSyDX9HxA40RAn07l9kAwLYvkxAKX1oCsg-8'
+        params['key'] = '<google_api_key>'
         params['address'] = address
         url = 'https://maps.googleapis.com/maps/api/geocode/json?' + urllib.parse.urlencode(params)
         print('Retrieving from Google API...')
